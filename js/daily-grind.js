@@ -88,7 +88,66 @@ switch(today){
         };
     break;
 
-    
+    case 4:
+        today = "Thursday";
+        coffee = {
+            name:"cold-brew",
+            color: "purple",
+            pic: "images/cold-brew.jpg",
+            alt: "A picture of a cold brew",
+            day: "Thursday",
+            desc: `Cold pressed coffee! Sweet and smooth`
+        };
+    break;
+
+    case 5:
+        today = "Friday;
+        coffee = {
+            name:"frappaccino",
+            color: "brown",
+            pic: "images/frappacino.jpg",
+            alt: "A picture of a frappacino",
+            day: "Friday",
+            desc: `Blended iced coffee topped with whip cream!`
+        };
+    break;
+
+    case 6:
+        today = "Saturday";
+        coffee = {
+            name:"pumpkin-spice-latte",
+            color: "orange",
+            pic: "images/pumpkin-spice-latte.jpg",
+            alt: "A picture of a pumpkin-spice-latte",
+            day: "Saturday",
+            desc: `A mix of pumpkin flavors, steamed milk, and espresso topped with whip cream!`
+        };
+    break;
+
+    case 7:
+        today = "Sunday";
+        coffee = {
+            name:"mocha",
+            color: "yellow",
+            pic: "images/caramel-latte.jpg",
+            alt: "A picture of a caramel latte",
+            day: "Wednesday",
+            desc: `Espresso, frothed milk, and caramel sauce!`
+        };
+    break;
+
+    case 3:
+        today = "Wednesday";
+        coffee = {
+            name:"Caramel-latte",
+            color: "yellow",
+            pic: "images/caramel-latte.jpg",
+            alt: "A picture of a caramel latte",
+            day: "Wednesday",
+            desc: `Espresso, frothed milk, and caramel sauce!`
+        };
+    break;
+
 
     default:
         today = "Not sure what day it is!";
