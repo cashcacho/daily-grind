@@ -15,7 +15,7 @@ function coffeeTemplate(coffee){
 return `
 <p>
     		 <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee" />
-            <strong class="feature">${coffee.day} Coffee Special:</strong> ${coffee.day} daily coffee special is <strong class="feature">Pumpkin Spice Latte</strong>, which makes us wish it was always Fall, as this is one of our top sellers!</p>
+            <strong class="feature">${coffee.day} Coffee Special:</strong> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong></p>
 
   `;
 }
@@ -36,10 +36,6 @@ console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 
 
-myDate = new Date();
-
-today = myDate.getDay();
-
 //today=3;
 
 if(urlParams.has("day")){//from querystring
@@ -59,7 +55,7 @@ switch(today){
             color: "pink",
             pic: "images/bubble-tea.jpg",
             alt: "A picture of a bubble tea",
-            day: "Wednesday",
+            day: "Monday",
             desc: `I like me some bubble tea!`
       };
     break;
@@ -73,7 +69,7 @@ switch(today){
             alt: "A picture of a drip coffee",
             day: "Tuesday",
             desc: `No cream no sugar!`
-        };
+    };
       break;
 
     case 3:
@@ -85,7 +81,7 @@ switch(today){
             alt: "A picture of a caramel latte",
             day: "Wednesday",
             desc: `Espresso, frothed milk, and caramel sauce!`
-        };
+    };
     break;
 
     case 4:
@@ -97,19 +93,19 @@ switch(today){
             alt: "A picture of a cold brew",
             day: "Thursday",
             desc: `Cold pressed coffee! Sweet and smooth`
-        };
+    };
     break;
 
     case 5:
-        today = "Friday;
+        today = "Friday";
         coffee = {
             name:"frappaccino",
             color: "brown",
-            pic: "images/frappacino.jpg",
-            alt: "A picture of a frappacino",
+            pic: "images/frappaccino.jpg",
+            alt: "A picture of a frappaccino",
             day: "Friday",
             desc: `Blended iced coffee topped with whip cream!`
-        };
+    };
     break;
 
     case 6:
@@ -121,31 +117,19 @@ switch(today){
             alt: "A picture of a pumpkin-spice-latte",
             day: "Saturday",
             desc: `A mix of pumpkin flavors, steamed milk, and espresso topped with whip cream!`
-        };
+    };
     break;
 
-    case 7:
+    case 0:
         today = "Sunday";
         coffee = {
-            name:"mocha",
+            name:"caramel-latte",
             color: "yellow",
-            pic: "images/caramel-latte.jpg",
-            alt: "A picture of a caramel latte",
-            day: "Wednesday",
+            pic: "images/caramel-latte.jpg", 
+            alt: "A picture of a caramel-latte",
+            day: "Sunday",
             desc: `Espresso, frothed milk, and caramel sauce!`
-        };
-    break;
-
-    case 3:
-        today = "Wednesday";
-        coffee = {
-            name:"Caramel-latte",
-            color: "yellow",
-            pic: "images/caramel-latte.jpg",
-            alt: "A picture of a caramel latte",
-            day: "Wednesday",
-            desc: `Espresso, frothed milk, and caramel sauce!`
-        };
+    };
     break;
 
 
