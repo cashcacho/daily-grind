@@ -123,12 +123,12 @@ switch(today){
     case 0:
         today = "Sunday";
         coffee = {
-            name:"caramel-latte",
-            color: "yellow",
-            pic: "images/caramel-latte.jpg", 
-            alt: "A picture of a caramel-latte",
+            name:"Mocha",
+            color: "brown",
+            pic: "images/mocha.jpg", 
+            alt: "A picture of a mocha",
             day: "Sunday",
-            desc: `Espresso, frothed milk, and caramel sauce!`
+            desc: `Espresso, chocolate powder, followed by cream and milk!`
     };
     break;
 
